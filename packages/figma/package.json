@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "build": "node --experimental-json-modules build.js",
-    "start:css": "node ./dist/index.js"
+    "start:css": "node ./dist/index.js css",
+    "start:icon": "node ./dist/index.js icon"
   },
   "exports": {
     "./foundation.scss": "./foundation.scss",

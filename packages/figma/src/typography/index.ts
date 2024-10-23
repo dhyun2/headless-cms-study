@@ -16,7 +16,7 @@ export const getTypographyCssClassList = async () => {
   for (const node of generator) {
     if (node.type === 'TEXT' && node.styles && typoKeyList.includes(node.styles.text ?? '')) {
       const { fontSize, fontWeight, lineHeightPercentFontSize, letterSpacing } = node.style;
-
+      if (typoList[node.styles.text].name.includes('|')) continue;
       result.push(
         `.typo-${typoList[node.styles.text].name
           .replaceAll('/', '-')

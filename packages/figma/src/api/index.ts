@@ -1,6 +1,6 @@
 import { FoundationType } from '../../type';
 import * as dotenv from 'dotenv';
-import type { GetFileNodesResponse } from '@figma/rest-api-spec';
+import type { GetFileNodesResponse, GetImagesResponse } from '@figma/rest-api-spec';
 
 dotenv.config();
 
@@ -34,9 +34,8 @@ const ENV = process.env;
 
 const apiRequest = async <T>(fileName: FoundationType): Promise<T> => {
   const option = FETCH_OPTION;
-  const url = `${ENV.FIGMA_GET_ENDPOINT}/${ENV.FIGMA_FILENAME}/nodes?ids=${getFoundationId(fileName)}`;
+  const url = `${ENV.FIGMA_GET_ENDPOINT}files/${ENV.FIGMA_FILENAME}/nodes?ids=${getFoundationId(fileName)}`;
 
-  console.log(url, option);
   const response = await fetch(url, option);
 
   if (!response.ok) {
@@ -47,4 +46,20 @@ const apiRequest = async <T>(fileName: FoundationType): Promise<T> => {
 
 export const fetchFigmaNodesByFileName = async (fileName: FoundationType): Promise<GetFileNodesResponse> => {
   return await apiRequest<GetFileNodesResponse>(fileName);
+};
+
+const apiImagesRequest = async <T>(ids: string): Promise<T> => {
+  const option = FETCH_OPTION;
+  const url = `${ENV.FIGMA_GET_ENDPOINT}images/${ENV.FIGMA_FILENAME}?ids=${ids}&format=svg`;
+
+  const response = await fetch(url, option);
+
+  if (!response.ok) {
+    throw new Error('Error plz check api');
+  }
+  return await response.json();
+};
+
+export const fetchFigmaImagesByids = async (ids: string): Promise<GetImagesResponse> => {
+  return await apiImagesRequest<GetImagesResponse>(ids);
 };

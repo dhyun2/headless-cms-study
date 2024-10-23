@@ -30,7 +30,6 @@ export const getColorCssClassList = async () => {
         const { opacity } = fills;
         const { r, g, b, a } = fills.color;
         const color = rgbaToHex(r, g, b, opacity);
-        console.log(colorList[node.styles.fill]);
         result.push(`--color-${colorList[node.styles.fill].name.replaceAll('/', '-')}: ${color.trim()};`);
       }
     }
