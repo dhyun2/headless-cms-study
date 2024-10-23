@@ -11,7 +11,8 @@
   },
   "exports": {
     "./foundation.scss": "./foundation.scss",
-    "./foundation.json": "./foundation.json"
+    "./foundation.json": "./foundation.json",
+    "./svg/*": "./svg/*"
   },
   "keywords": [],
   "author": "",
