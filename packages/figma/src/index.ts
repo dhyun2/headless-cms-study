@@ -21,7 +21,7 @@ const generateCss = async (classList: string[]) => {
   const selector = ':root';
   const data = `${selector} {\n${classList.join('\n')}\n}`;
 
-  fs.writeFileSync('foundation.css', data);
+  fs.writeFileSync('foundation.scss', data);
 };
 
 interface KeyValueObject {

@@ -6,5 +6,10 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "scss.validate": true,
+  "css.validate": true,
+  "editor.quickSuggestions": {
+    "strings": true
   }
 }

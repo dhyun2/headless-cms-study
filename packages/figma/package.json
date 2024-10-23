@@ -9,7 +9,7 @@
     "start:css": "node ./dist/index.js"
   },
   "exports": {
-    "./foundation.css": "./foundation.css",
+    "./foundation.scss": "./foundation.scss",
     "./foundation.json": "./foundation.json"
   },
   "keywords": [],
