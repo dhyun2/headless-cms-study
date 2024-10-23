@@ -28,8 +28,8 @@ const createBuildConfig = ({ entryPoints, external, minify, watch }: CreateBuild
   splitting: false, // 코드 분할 비활성화
   outDir: 'dist', // 출력 폴더
   clean: true, // 빌드 시 dist 폴더 정리
-  external, // 외부 의존성 설정
   watch, // 감시 모드 설정
+  external
 });
 
 // 실행 함수 (타입 정의 적용)

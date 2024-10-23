@@ -1,0 +1,444 @@
+:root {
+--color-base-static-black: #000000;
+--color-base-static-white: #FFFFFF;
+--color-base-gray-900: #121212;
+--color-base-gray-800: #333333;
+--color-base-gray-700: #494949;
+--color-base-gray-600: #767676;
+--color-base-gray-500: #A0A0A0;
+--color-base-gray-400: #C2C2C2;
+--color-base-gray-300: #E6E6E6;
+--color-base-gray-200: #F3F3F3;
+--color-base-gray-100: #FAFAFA;
+--color-base-coolgray-900: #101214;
+--color-base-coolgray-800: #202328;
+--color-base-coolgray-700: #30353D;
+--color-base-coolgray-600: #404651;
+--color-base-coolgray-500: #505865;
+--color-base-coolgray-400: #737984;
+--color-base-coolgray-300: #969BA3;
+--color-base-coolgray-200: #CBCDD1;
+--color-base-coolgray-100: #F4F5F6;
+--color-base-blue-900: #07172F;
+--color-base-blue-800: #0E2E5F;
+--color-base-blue-700: #14448E;
+--color-base-blue-600: #1B5BBE;
+--color-base-blue-500: #2272ED;
+--color-base-blue-400: #3C86F0;
+--color-base-blue-300: #8ABAFE;
+--color-base-blue-200: #BFD6F6;
+--color-base-blue-100: #F0F6FF;
+--color-base-red-900: #330E0E;
+--color-base-red-800: #661D1D;
+--color-base-red-700: #992B2B;
+--color-base-red-600: #CC3A3A;
+--color-base-red-400: #FF6D6D;
+--color-base-red-300: #FF9191;
+--color-base-red-200: #FFB6B6;
+--color-base-red-100: #FFDADA;
+--color-base-green-900: #032A09;
+--color-base-green-800: #065313;
+--color-base-green-700: #0A7D1C;
+--color-base-green-600: #0DA626;
+--color-base-green-500: #10D02F;
+--color-base-green-400: #40D959;
+--color-base-green-300: #70E382;
+--color-base-green-200: #9FECAC;
+--color-base-green-100: #CFF6D5;
+--color-base-orange-900: #331A0B;
+--color-base-orange-800: #663417;
+--color-base-orange-700: #994E22;
+--color-base-orange-600: #CC682D;
+--color-base-orange-500: #FF8239;
+--color-base-orange-400: #FF9659;
+--color-base-orange-300: #FFB488;
+--color-base-orange-200: #FFCDB0;
+--color-base-orange-100: #FFE8D7;
+--color-base-yellow-900: #33230A;
+--color-base-yellow-800: #664714;
+--color-base-yellow-700: #996A1D;
+--color-base-yellow-600: #CC8E27;
+--color-base-yellow-500: #FFB131;
+--color-base-yellow-400: #FFC531;
+--color-base-yellow-300: #FFD66C;
+--color-base-yellow-200: #FFE5A1;
+--color-base-yellow-100: #FFF3D6;
+--color-base-brand-yellow: #FFB131;
+--color-base-brand-orange: #FF8239;
+--color-base-brand-red: #FF4848;
+--color-semantic-text-accent: #2272ED;
+--color-semantic-contrast: #FFFFFF;
+--color-semantic-text-primary: #121212;
+--color-semantic-text-secondary: #494949;
+--color-semantic-text-tertiary: #767676;
+--color-semantic-text-caption: #A0A0A0;
+--color-semantic-bg-default: #FFFFFF;
+--color-semantic-bg-netural: #FAFAFA;
+--color-semantic-bg-dim_light: #0000004D;
+--color-semantic-bg-dim_default: #00000099;
+--color-semantic-divider-default: #F3F3F3;
+--color-semantic-border-default: #E6E6E6;
+--color-semantic-primary-text-color: #2272ED;
+--color-semantic-primary-text-press: #1B5BBE;
+--color-semantic-primary-text-interaction_bg: #F0F6FF;
+--color-semantic-primary-text-disable: #C2C2C2;
+--color-semantic-primary-fill-color: #2272ED;
+--color-semantic-primary-fill-press: #1B5BBE;
+--color-semantic-primary-fill-disable: #BFD6F6;
+--color-semantic-primary-outline-color: #2272ED;
+--color-semantic-primary-outline-press_border: #1B5BBE;
+--color-semantic-primary-outline-press_bg: #F0F6FF;
+--color-semantic-primary-outline-disable: #BFD6F6;
+--color-semantic-secondary-text-color: #505865;
+--color-semantic-secondary-text-interaction_bg: #F4F5F6;
+--color-semantic-secondary-text-disable: #C2C2C2;
+--color-semantic-secondary-fill-color: #505865;
+--color-semantic-secondary-fill-press: #404651;
+--color-semantic-secondary-fill-disable_text: #CBCDD1;
+--color-semantic-secondary-fill-disable_bg: #969BA3;
+--color-semantic-secondary-outline-color: #505865;
+--color-semantic-secondary-outline-press_bg: #CBCDD1;
+--color-semantic-secondary-outline-disable_text: #969BA3;
+--color-semantic-secondary-outline-disable_border: #CBCDD1;
+--color-semantic-neutral-text-accent: #121212;
+--color-semantic-neutral-text-color: #767676;
+--color-semantic-neutral-text-press: #494949;
+--color-semantic-neutral-text-interaction_bg: #FAFAFA;
+--color-semantic-neutral-text-disable: #C2C2C2;
+--color-semantic-neutral-text-disable_control: #E6E6E6;
+--color-semantic-neutral-text-inactive: #A0A0A0;
+--color-semantic-neutral-fill-bg: #F3F3F3;
+--color-semantic-neutral-fill-press_bg: #E6E6E6;
+--color-semantic-neutral-fill-disable_text: #C2C2C2;
+--color-semantic-neutral-fill-disable_bg: #F3F3F3;
+--color-semantic-neutral-outline-border: #E6E6E6;
+--color-semantic-neutral-outline-press_border: #C2C2C2;
+--color-semantic-neutral-outline-press_bg: #FAFAFA;
+--color-semantic-neutral-outline-disable_text: #C2C2C2;
+--color-semantic-neutral-outline-disable_border: #F3F3F3;
+--color-semantic-state-negative: #FF4848;
+--color-base-red-500: #FF4848;
+--color-semantic-state-positive: #10D02F;
+--color-semantic-spot-yellow: #FFC531;
+--color-semantic-spot-red: #FF4848;
+--color-Semantic-Line-Normal-_Strong: #70737C85;
+--color-Semantic-Line-Normal-Normal: #70737C38;
+--color-Semantic-Static-White: #FFFFFF;
+--color-base-opacity-black-300: #0000004D;
+--color-base-opacity-black-600: #00000099;
+--color-semantic-secondary-text-press: #404651;
+--layout-spacing-none: 0.5px;
+--layout-spacing-2: 2px;
+--layout-spacing-4: 4px;
+--layout-spacing-base: 8px;
+--layout-spacing-16: 16px;
+--layout-spacing-16: 16px;
+--layout-spacing-24: 24px;
+--layout-spacing-32: 32px;
+--layout-spacing-32: 48px;
+--layout-radius-default: 4px;
+--layout-radius-half: 8px;
+--layout-radius-full: 16px;
+.elevation-1 {
+box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.13);
+}
+.elevation-2 {
+box-shadow:  0px 1px 2px 0px rgba(0, 0, 0, 0.15) 0px 2px 6px 2px rgba(0, 0, 0, 0.10);
+}
+.elevation-3 {
+box-shadow:  0px 4px 8px 3px rgba(0, 0, 0, 0.15) 0px 1px 3px 0px rgba(0, 0, 0, 0.39);
+}
+.elevation-4 {
+box-shadow:  0px 6px 10px 4px rgba(0, 0, 0, 0.15) 0px 2px 3px 0px rgba(0, 0, 0, 0.30);
+}
+.elevation-5 {
+box-shadow:  0px 8px 12px 6px rgba(0, 0, 0, 0.15) 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+.typo-display-34-bold {
+font-size: 34px;
+font-weight: 700;
+font-style: normal;
+line-height: 130%;
+letter-spacing: -0.68px;
+}
+.typo-title-17-medium {
+font-size: 17px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.34px;
+}
+.typo-title-15-bold {
+font-size: 15px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.3px;
+}
+.typo-display-43-bold {
+font-size: 43px;
+font-weight: 700;
+font-style: normal;
+line-height: 130%;
+letter-spacing: -0.86px;
+}
+.typo-display-30-bold {
+font-size: 30px;
+font-weight: 700;
+font-style: normal;
+line-height: 130%;
+letter-spacing: -0.6px;
+}
+.typo-title-24-bold {
+font-size: 24px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.48px;
+}
+.typo-title-21-bold {
+font-size: 21px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.42px;
+}
+.typo-title-19-bold {
+font-size: 19px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.38px;
+}
+.typo-title-19-medium {
+font-size: 19px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.38px;
+}
+.typo-title-17-bold {
+font-size: 17px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.34px;
+}
+.typo-title-15-medium {
+font-size: 15px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.3px;
+}
+.typo-body-21-medium {
+font-size: 21px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.42px;
+}
+.typo-body-17-bold {
+font-size: 17px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.34px;
+}
+.typo-body-17-medium {
+font-size: 17px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.34px;
+}
+.typo-body-15-regular {
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.3px;
+}
+.typo-Caption-11 | regular {
+font-size: 11px;
+font-weight: 400;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.32999999999999996px;
+}
+.typo-number-21 {
+font-size: 21px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-body-15-bold {
+font-size: 15px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.3px;
+}
+.typo-body-15-medium {
+font-size: 15px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.3px;
+}
+.typo-body-13-regular {
+font-size: 13px;
+font-weight: 400;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.26px;
+}
+.typo-body-15-regular-long {
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+line-height: 150%;
+letter-spacing: -0.3px;
+}
+.typo-body-13-bold {
+font-size: 13px;
+font-weight: 700;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.26px;
+}
+.typo-body-13-medium {
+font-size: 13px;
+font-weight: 500;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.26px;
+}
+.typo-caption-12-regular {
+font-size: 12px;
+font-weight: 400;
+font-style: normal;
+line-height: 140%;
+letter-spacing: -0.24px;
+}
+.typo-button-17-regular {
+font-size: 17px;
+font-weight: 400;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.34px;
+}
+.typo-button-15-medium {
+font-size: 15px;
+font-weight: 500;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.3px;
+}
+.typo-button-15-regular {
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.3px;
+}
+.typo-button-13-medium {
+font-size: 13px;
+font-weight: 500;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.26px;
+}
+.typo-button-13-regular {
+font-size: 13px;
+font-weight: 400;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.26px;
+}
+.typo-label-12-bold {
+font-size: 12px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.24px;
+}
+.typo-label-11-bold {
+font-size: 11px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.22px;
+}
+.typo-label-11-medium {
+font-size: 11px;
+font-weight: 500;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.22px;
+}
+.typo-label-9-medium {
+font-size: 9px;
+font-weight: 500;
+font-style: normal;
+line-height: 100%;
+letter-spacing: -0.18px;
+}
+.typo-number-43 {
+font-size: 43px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-34 {
+font-size: 34px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-30 {
+font-size: 30px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-24 {
+font-size: 24px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-19 {
+font-size: 19px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-17 {
+font-size: 17px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-15 {
+font-size: 15px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+.typo-number-13 {
+font-size: 13px;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+letter-spacing: 0px;
+}
+}

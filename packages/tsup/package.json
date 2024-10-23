@@ -1,7 +1,7 @@
 {
   "name": "@hyun2/tsup",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "build/run.ts",
   "types": "dist/index.d.ts",
   "description": "",
   "type": "module",

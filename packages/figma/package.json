@@ -1,0 +1,28 @@
+{
+  "name": "@hyun2/figma",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node --experimental-json-modules build.js",
+    "start:css": "node ./dist/index.js"
+  },
+  "exports": {
+    "./foundation.css": "./foundation.css",
+    "./foundation.json": "./foundation.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@figma/rest-api-spec": "^0.13.0",
+    "@hyun2/eslint-config": "workspace:^",
+    "@hyun2/ts-config": "workspace:^",
+    "@hyun2/esbuild": "workspace:^"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "figma-api-exporter": "^1.0.0"
+  }
+}
