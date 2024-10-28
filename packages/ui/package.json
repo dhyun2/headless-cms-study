@@ -1,0 +1,15 @@
+{
+  "name": "@hyun2/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hyun2/eslint-config": "workspace:^",
+    "@hyun2/ts-config": "workspace:^",
+    "@turbo/gen": "^2.2.3"
+  }
+}
