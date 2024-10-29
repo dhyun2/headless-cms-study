@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
   "keywords": [],
+  "exports": {
+    "./icons/vue": "./src/icons/vue/index.ts"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@hyun2/eslint-config": "workspace:^",
+    "@hyun2/figma": "workspace:^",
     "@hyun2/ts-config": "workspace:^",
     "@turbo/gen": "^2.2.3"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "vue": "^3.5.10"
   }
 }

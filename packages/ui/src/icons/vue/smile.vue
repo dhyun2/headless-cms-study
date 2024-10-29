@@ -1,0 +1,36 @@
+<template>
+    <svg :width="size" :height="size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6908_908)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 3.9001C7.52659 3.9001 3.9001 7.52659 3.9001 12.0001C3.9001 16.4736 7.52659 20.1001 12.0001 20.1001C16.4736 20.1001 20.1001 16.4736 20.1001 12.0001C20.1001 7.52659 16.4736 3.9001 12.0001 3.9001ZM2.1001 12.0001C2.1001 6.53248 6.53248 2.1001 12.0001 2.1001C17.4677 2.1001 21.9001 6.53248 21.9001 12.0001C21.9001 17.4677 17.4677 21.9001 12.0001 21.9001C6.53248 21.9001 2.1001 17.4677 2.1001 12.0001ZM8.10013 12.0001V8.0001H9.90013V12.0001H8.10013ZM14.1001 12.0001V8.0001H15.9001V12.0001H14.1001ZM8.24088 13.6398C8.87438 15.0897 10.3203 16.1001 12.0001 16.1001C13.68 16.1001 15.1259 15.0897 15.7594 13.6398L17.4088 14.3604C16.4992 16.4423 14.4209 17.9001 12.0001 17.9001C9.57934 17.9001 7.50106 16.4423 6.59144 14.3604L8.24088 13.6398Z" :fill="color"/>
+</g>
+<defs>
+<clipPath id="clip0_6908_908">
+<rect :width="size" :height="size" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+</template>
+
+<script>
+export default {
+  name: 'allIcon',
+  props: {
+    size: {
+      type: String,
+      default: '24',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+  },
+};
+</script>
+
+<style scoped>
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>

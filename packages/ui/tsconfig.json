@@ -1,5 +1,9 @@
 {
   "extends": "@hyun2/ts-config/tsconfig.base.json",
-  "include": ["."],
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "React.createElement"
+  },
+  "include": [".", "src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["dist", "build", "node_modules"]
 }

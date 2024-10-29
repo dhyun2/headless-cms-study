@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue';
-import aicoach from '@hyun2/figma/svg/aicoach.svg';
+import { Aicoach, Golfzonpass, Heart_fill, Lightening, Megaphone } from '@hyun2/ui/icons/vue';
 </script>
 
 <template>
@@ -11,9 +11,15 @@ import aicoach from '@hyun2/figma/svg/aicoach.svg';
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-    <a target="_blank">
-      <img :src="aicoach" class="logo vue" alt="Vue logo" />
-    </a>
+    <div>
+      하이
+      <Aicoach :size="50" :color="'red'" />
+      <Golfzonpass :size="50" :color="'red'" />
+      <Aicoach :size="50" :color="'red'" />
+      <Heart_fill :size="50" :color="'red'" />
+      <Megaphone :size="50" :color="'red'" />
+      <Lightening :size="50" :color="'red'" />
+    </div>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>

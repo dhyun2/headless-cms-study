@@ -1,0 +1,26 @@
+<template>
+    {{{svgContent}}}
+</template>
+
+<script>
+export default {
+  name: '{{name}}Icon',
+  props: {
+    size: {
+      type: String,
+      default: '24',
+    },
+    color: {
+      type: String,
+      default: 'currentColor',
+    },
+  },
+};
+</script>
+
+<style scoped>
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+</style>

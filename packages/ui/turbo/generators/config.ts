@@ -1,5 +1,8 @@
 import type { PlopTypes } from '@turbo/gen';
 
+import iconGenerator from './icon';
+import indexGenerator from './icon-barrel.config';
+
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   // 생성기 설정
   plop.setGenerator('UI', {
@@ -20,4 +23,6 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       // 다른 파일들 생성
     ],
   });
+  iconGenerator(plop);
+  indexGenerator(plop);
 }
