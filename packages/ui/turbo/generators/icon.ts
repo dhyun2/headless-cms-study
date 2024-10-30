@@ -56,9 +56,14 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
             framework === 'Vue' ? 'plop-templates/vue-component.hbs' : 'plop-templates/react-component.hbs';
 
           const transFormSvgVue = (data: string) => {
+            if (framework === 'Vue') {
+              return data
+                .replaceAll('width="24" height="24"', ':width="`${size}px`" :height="`${size}px`"')
+                .replaceAll('fill="#121212"', ':fill="color"');
+            }
             return data
-              .replaceAll('width="24" height="24"', ':width="size" :height="size"')
-              .replaceAll('fill="#121212"', ':fill="color"');
+              .replaceAll('width="24" height="24"', 'width={`${size}px`} height={`${size}px`}')
+              .replaceAll('fill="#121212"', 'fill={color}');
           };
 
           actions.push({
@@ -68,8 +73,6 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
             data: {
               svgContent: transFormSvgVue(svgContent),
               name: capitalizeFirstName,
-              sizeProp: framework === 'Vue' ? ':width="size" :height="size"' : 'width={size} height={size}',
-              colorProp: framework === 'Vue' ? ':fill="color"' : 'fill={color}',
             },
             force: true,
           });

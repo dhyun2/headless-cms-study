@@ -7,12 +7,12 @@ export default {
   name: '{{name}}Icon',
   props: {
     size: {
-      type: String,
-      default: '24',
+      type: 16 | 20 | 24 | 32,
+      default: 24,
     },
     color: {
       type: String,
-      default: 'currentColor',
+      default: '',
     },
   },
 };

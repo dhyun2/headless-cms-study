@@ -1,12 +1,11 @@
-  </svg>
 import React from 'react';
 
 type {{name}}IconProps = {
-  size?: string;
+  size?: 16 | 20 | 24 | 32;
   color?: string;
 };
 
-const {{name}}Icon: React.FC<{{name}}IconProps> = ({ size = '24', color = 'currentColor' }) => (
+const {{name}}Icon: React.FC<{{name}}IconProps> = ({ size = 24, color = 'currentColor' }) => (
   {{{svgContent}}}
 );
 
